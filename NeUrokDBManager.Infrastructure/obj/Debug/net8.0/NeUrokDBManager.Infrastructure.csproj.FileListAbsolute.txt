@@ -1,0 +1,17 @@
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Infrastructure\bin\Debug\net8.0\NeUrokDBManager.Infrastructure.deps.json
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Infrastructure\bin\Debug\net8.0\NeUrokDBManager.Infrastructure.dll
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Infrastructure\bin\Debug\net8.0\NeUrokDBManager.Infrastructure.pdb
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Infrastructure\bin\Debug\net8.0\NeUrokDBManager.Core.dll
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Infrastructure\bin\Debug\net8.0\NeUrokDBManager.Core.pdb
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Infrastructure\obj\Debug\net8.0\NeUrokDBManager.Infrastructure.csproj.AssemblyReference.cache
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Infrastructure\obj\Debug\net8.0\NeUrokDBManager.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Infrastructure\obj\Debug\net8.0\NeUrokDBManager.Infrastructure.AssemblyInfoInputs.cache
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Infrastructure\obj\Debug\net8.0\NeUrokDBManager.Infrastructure.AssemblyInfo.cs
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Infrastructure\obj\Debug\net8.0\NeUrokDBManager.Infrastructure.csproj.CoreCompileInputs.cache
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Infrastructure\obj\Debug\net8.0\NeUrokDB.4A0DAA53.Up2Date
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Infrastructure\obj\Debug\net8.0\NeUrokDBManager.Infrastructure.dll
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Infrastructure\obj\Debug\net8.0\refint\NeUrokDBManager.Infrastructure.dll
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Infrastructure\obj\Debug\net8.0\NeUrokDBManager.Infrastructure.pdb
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Infrastructure\obj\Debug\net8.0\ref\NeUrokDBManager.Infrastructure.dll
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Infrastructure\bin\Debug\net8.0\NeUrokDBManager.Infrastructure.runtimeconfig.json
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Infrastructure\obj\Debug\net8.0\NeUrokDBManager.Infrastructure.genruntimeconfig.cache
