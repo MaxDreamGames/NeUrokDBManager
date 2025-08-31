@@ -1,0 +1,20 @@
+﻿NeUrokDBManager.WPF
+1.0.0.0
+
+winexe
+C#
+.cs
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.WPF\obj\Release\net8.0-windows\
+NeUrokDBManager.WPF
+none
+false
+TRACE;RELEASE;NET;NET8_0;NETCOREAPP
+
+3-1541167344
+2-1319491287
+11-277083092
+244-922496640
+MainWindow.xaml;Views\Pages\ManagePage.xaml;Views\Pages\MenuPage.xaml;
+
+True
+

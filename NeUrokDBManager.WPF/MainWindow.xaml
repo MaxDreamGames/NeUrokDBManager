@@ -1,0 +1,316 @@
+﻿<Window x:Class="NeUrokDBManager.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NeUrokDBManager.WPF"
+        mc:Ignorable="d"
+        MinWidth="930"
+        WindowStyle="None"
+        WindowStartupLocation="CenterOwner"
+        AllowsTransparency="True"
+               TextOptions.TextFormattingMode="Display"
+TextOptions.TextRenderingMode="ClearType"
+SnapsToDevicePixels="False"
+UseLayoutRounding="True"
+RenderOptions.EdgeMode="Aliased"
+        Background="#dda0dd"
+        Title="Menu"
+        MouseMove="Window_MouseMove" 
+        Icon="/ExternalResources/Images/Icons/Logo.png"
+    Closed="Window_Closed" Loaded="Window_Loaded" 
+    >
+    <Window.Resources>
+        <Style x:Key="RectBorderStyle" TargetType="Rectangle">
+            <Setter Property="Focusable" Value="False" />
+            <Setter Property="Fill" Value="Transparent" />
+            <Setter Property="Tag" Value="{Binding RelativeSource={RelativeSource AncestorType=Window}}" />
+            <EventSetter Event="MouseLeftButtonDown" Handler="Resize_Init"/>
+            <EventSetter Event="MouseLeftButtonUp" Handler="Resize_End"/>
+            <EventSetter Event="MouseMove" Handler="Resizeing_Form"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid Name="ControlPanel"
+              Height="30"
+      Margin="0" 
+      VerticalAlignment="Top" 
+      Background="#753a87" MouseLeftButtonDown="ControlPanel_MouseLeftButtonDown" MouseLeftButtonUp="ControlPanel_MouseLeftButtonUp" >
+
+            <!-- Определение колонок -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Column="0"
+                   RenderOptions.BitmapScalingMode="HighQuality"
+                   Source="/ExternalResources/Images/Icons/Logo.png" Width="20" Margin="10,0,0,0"/>
+
+            <!-- Заголовок окна -->
+            <TextBlock x:Name="WindowName"
+               Text="Registrate"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Left"
+               Grid.Column="1"
+               Margin="15,0,0,0"
+               FontFamily="Calibri" 
+               Foreground="White" 
+               FontSize="14" 
+               FontWeight="Bold">
+            </TextBlock>
+
+            <!-- Кнопки управления окном -->
+            <StackPanel Orientation="Horizontal" 
+                Grid.Column="2"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top">
+
+                <!-- Кнопка "сверрнуть" -->
+                <Button x:Name="MinimizeBtn" 
+                Height="30" 
+                Width="30"
+                Padding="0"
+                BorderThickness="0" 
+                Background="Transparent"
+                Cursor="Arrow" IsTabStop="False" Focusable="False" Click="MinimizeBtn_Click">
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Grid>
+                                <!-- Фон кнопки -->
+                                <Border x:Name="BackgroundBorder"
+                                Background="{TemplateBinding Background}"
+                                CornerRadius="4"/>
+
+                                <!-- Иконка -->
+                                <Image Source="/ExternalResources/Images/Icons/MinimizeIcon.png"
+                               Stretch="Uniform"
+                               Margin="8"/>
+                            </Grid>
+
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="BackgroundBorder" 
+                                    Property="Background" 
+                                    Value="#4CDDDDDD"/>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter TargetName="BackgroundBorder" 
+                                    Property="Background" 
+                                    Value="#80DDDDDD"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Button.Template>
+
+                    <!-- Анимации -->
+                    <Button.Triggers>
+                        <EventTrigger RoutedEvent="MouseEnter">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                            To="0.8"
+                                            Duration="0:0:0.2"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="MouseLeave">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                            To="1"
+                                            Duration="0:0:0.3"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Button.Triggers>
+                </Button>
+
+                <!-- Кнопка "на весь экран" -->
+                <Button x:Name="FullScreenBtn" 
+                Height="30" 
+                Width="30"
+                Padding="0"
+                BorderThickness="0" 
+                Background="Transparent"
+                Cursor="Arrow" IsTabStop="False" Focusable="False" Click="FullScreenBtn_Click">
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Grid>
+                                <!-- Фон кнопки -->
+                                <Border x:Name="BackgroundBorder"
+                                Background="{TemplateBinding Background}"
+                                CornerRadius="4"/>
+
+                                <!-- Иконка -->
+                                <Image Source="/ExternalResources/Images/Icons/FullScreenIcon.png"
+                               Stretch="Uniform"
+                               Margin="5"/>
+                            </Grid>
+
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="BackgroundBorder" 
+                                    Property="Background" 
+                                    Value="#4CDDDDDD"/>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter TargetName="BackgroundBorder" 
+                                    Property="Background" 
+                                    Value="#80DDDDDD"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Button.Template>
+
+                    <!-- Анимации -->
+                    <Button.Triggers>
+                        <EventTrigger RoutedEvent="MouseEnter">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                            To="0.8"
+                                            Duration="0:0:0.2"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="MouseLeave">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                            To="1"
+                                            Duration="0:0:0.3"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Button.Triggers>
+                </Button>
+
+
+                <!-- Кнопка закрытия -->
+                <Button x:Name="CloseBtn" 
+                Height="30" 
+                Width="30"
+                Padding="0"
+                BorderThickness="0" 
+                Background="Transparent"
+                Cursor="Arrow" IsTabStop="False" Focusable="False" Click="CloseBtn_Click">
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Grid>
+                                <!-- Фон кнопки -->
+                                <Border x:Name="BackgroundBorder"
+                                Background="{TemplateBinding Background}"
+                                CornerRadius="4"/>
+
+                                <!-- Иконка -->
+                                <Image Source="/ExternalResources/Images/Icons/CloseIcon.png"
+                               Stretch="Uniform"
+                               Margin="8"/>
+                            </Grid>
+
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="BackgroundBorder" 
+                                    Property="Background" 
+                                    Value="#4CDDDDDD"/>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter TargetName="BackgroundBorder" 
+                                    Property="Background" 
+                                    Value="#80DDDDDD"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Button.Template>
+
+                    <!-- Анимации -->
+                    <Button.Triggers>
+                        <EventTrigger RoutedEvent="MouseEnter">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                            To="0.8"
+                                            Duration="0:0:0.2"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="MouseLeave">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                            To="1"
+                                            Duration="0:0:0.3"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Button.Triggers>
+                </Button>
+            </StackPanel>
+        </Grid>
+
+
+        <Border Name="PageContainer" 
+                Margin="0 30 0 0">
+            <Frame x:Name="MainFrame" 
+                   NavigationUIVisibility="Hidden"
+                   HorizontalContentAlignment="Stretch"
+                   VerticalContentAlignment="Stretch"
+                   ContentRendered="MainFrame_ContentRendered"/>
+        </Border>
+        <Rectangle x:Name="leftSizeGrip"
+Width="5"
+HorizontalAlignment="Left"
+Cursor="SizeWE"
+Style="{StaticResource RectBorderStyle}" />
+        <Rectangle x:Name="rightSizeGrip"
+Width="5"
+HorizontalAlignment="Right"
+Cursor="SizeWE"
+Style="{StaticResource RectBorderStyle}" />
+        <Rectangle x:Name="topSizeGrip"
+Height="5"
+VerticalAlignment="Top"
+Cursor="SizeNS"
+Style="{StaticResource RectBorderStyle}" />
+        <Rectangle x:Name="bottomSizeGrip"
+Height="5"
+VerticalAlignment="Bottom"
+Cursor="SizeNS"
+Style="{StaticResource RectBorderStyle}" />
+        <!--  Corners  -->
+        <Rectangle Name="topLeftSizeGrip"
+Width="5"
+Height="5"
+HorizontalAlignment="Left"
+VerticalAlignment="Top"
+Cursor="SizeNWSE"
+Style="{StaticResource RectBorderStyle}" />
+        <Rectangle Name="bottomRightSizeGrip"
+Width="5"
+Height="5"
+HorizontalAlignment="Right"
+VerticalAlignment="Bottom"
+Cursor="SizeNWSE"
+Style="{StaticResource RectBorderStyle}" />
+        <Rectangle Name="topRightSizeGrip"
+Width="5"
+Height="5"
+HorizontalAlignment="Right"
+VerticalAlignment="Top"
+Cursor="SizeNESW"
+Style="{StaticResource RectBorderStyle}" />
+        <Rectangle Name="bottomLeftSizeGrip"
+Width="5"
+Height="5"
+HorizontalAlignment="Left"
+VerticalAlignment="Bottom"
+Cursor="SizeNESW"
+Style="{StaticResource RectBorderStyle}" />
+
+    </Grid>
+</Window>
