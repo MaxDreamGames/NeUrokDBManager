@@ -1,0 +1,11 @@
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Core\bin\Release\net8.0\NeUrokDBManager.Core.deps.json
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Core\bin\Release\net8.0\NeUrokDBManager.Core.dll
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Core\bin\Release\net8.0\NeUrokDBManager.Core.pdb
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Core\obj\Release\net8.0\NeUrokDBManager.Core.GeneratedMSBuildEditorConfig.editorconfig
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Core\obj\Release\net8.0\NeUrokDBManager.Core.AssemblyInfoInputs.cache
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Core\obj\Release\net8.0\NeUrokDBManager.Core.AssemblyInfo.cs
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Core\obj\Release\net8.0\NeUrokDBManager.Core.csproj.CoreCompileInputs.cache
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Core\obj\Release\net8.0\NeUrokDBManager.Core.dll
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Core\obj\Release\net8.0\refint\NeUrokDBManager.Core.dll
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Core\obj\Release\net8.0\NeUrokDBManager.Core.pdb
+F:\Computer Science\Programming\Apps\C#\NeUrokDBManager\NeUrokDBManager.Core\obj\Release\net8.0\ref\NeUrokDBManager.Core.dll

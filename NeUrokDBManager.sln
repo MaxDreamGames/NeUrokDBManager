@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeUrokDBManager.Core", "NeUrokDBManager.Core\NeUrokDBManager.Core.csproj", "{4D82E5A6-9C64-4D2E-A6A2-927F6911C655}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeUrokDBManager.Application", "NeUrokDBManager.Application\NeUrokDBManager.Application.csproj", "{0F5C37E3-EDD6-403E-963B-D9C70F043671}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeUrokDBManager.Infrastructure", "NeUrokDBManager.Infrastructure\NeUrokDBManager.Infrastructure.csproj", "{626411FD-9AAF-4EAA-8D53-582C56952D40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeUrokDBManager.WPF", "NeUrokDBManager.WPF\NeUrokDBManager.WPF.csproj", "{CE134DE8-96D6-4A9A-944C-7B5B4239A0D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D82E5A6-9C64-4D2E-A6A2-927F6911C655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D82E5A6-9C64-4D2E-A6A2-927F6911C655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D82E5A6-9C64-4D2E-A6A2-927F6911C655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D82E5A6-9C64-4D2E-A6A2-927F6911C655}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F5C37E3-EDD6-403E-963B-D9C70F043671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F5C37E3-EDD6-403E-963B-D9C70F043671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F5C37E3-EDD6-403E-963B-D9C70F043671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F5C37E3-EDD6-403E-963B-D9C70F043671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{626411FD-9AAF-4EAA-8D53-582C56952D40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{626411FD-9AAF-4EAA-8D53-582C56952D40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{626411FD-9AAF-4EAA-8D53-582C56952D40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{626411FD-9AAF-4EAA-8D53-582C56952D40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE134DE8-96D6-4A9A-944C-7B5B4239A0D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE134DE8-96D6-4A9A-944C-7B5B4239A0D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE134DE8-96D6-4A9A-944C-7B5B4239A0D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE134DE8-96D6-4A9A-944C-7B5B4239A0D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D602976-F072-4357-8334-642ADF934CFC}
+	EndGlobalSection
+EndGlobal
